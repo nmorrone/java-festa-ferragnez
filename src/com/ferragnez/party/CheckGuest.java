@@ -27,14 +27,17 @@ public class CheckGuest {
 			//apro condizione di uguaglianza
 			if(user.equals(invitati[i])) {
 				condition = 1;
-				System.out.println(condition);
+				//System.out.println(condition);
 			}
+		}
+		
+		//apro condizione per il messaggio
+		if(condition == 1) {
 			
-			//apro condizione per il messaggio
-			if(condition == 1) {
-				
-				System.out.println("Complimenti " + user + " goditi la Festa!");
-			}
+			System.out.println("Complimenti " + user + " goditi la Festa!");
+		}
+		else {
+			System.out.println("Mi dispiace " + user + " non sei stato invitato!");
 		}
 	}
 }
